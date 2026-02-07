@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav>
+  <h2 class="logo">PORTFOLIO<span>.</span></h2>
+  <ul>
+    <li onclick="showSection('home')">Home</li>
+    <li onclick="showSection('about')">About</li>
+    <li onclick="showSection('skills')">Skills</li>
+    <li onclick="showSection('projects')">Projects</li>
+    <li onclick="showSection('contact')">Contact</li>
+  </ul>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- HOME -->
+  <section id="home" class="content active">
+    <img src="profile.png.jpeg" class="profile">
+    <h1>Hi, I'm <span>Chaitra</span></h1>
+    <h2 class="typing"></h2>
+    <p>Aspiring professional in technology and business systems.</p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="content">
+    <h1>About Me</h1>
+    <p>
+      I am a Computer Science and Business Systems student who is interested in technology and learning new skills. I enjoy improving my knowledge in software development and business analytics. I like solving problems using logical thinking and simple solutions. I am a quick learner and open to new challenges. I work well in a team and try to communicate clearly. I believe in continuous learning and self-improvement. My goal is to build a successful career in the technology field.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="content">
+    <h1>Skills</h1>
+    <div class="skills-grid">
+      <div>HTML</div>
+      <div>Git & Github</div>
+      <div>Java</div>
+      <div>MySQL</div>
+      <div>Business Analytics</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="content">
+    <h1>Projects</h1>
+
+    <div class="project-card">
+      <h3>Bank Account Management System</h3>
+      <p>Java-based mini project Developed a Bank Account Management System to manage customer accounts, transactions, and balance details efficiently.
+The system supports core banking operations such as account creation, deposits, withdrawals, and balance inquiry.
+This project strengthened my skills in Java programming, database handling, and implementing secure business logic.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Blood Bank Management System</h3>
+      <p>Developed a Blood Bank Management System to efficiently manage donor details, blood group availability, and request records.
+The system helps streamline blood collection, storage, and allocation processes with accurate data management.
+This project improved my understanding of database design, backend logic, and real-world problem solving..</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="content">
+    <h1>Contact Me</h1>
+    <p>📧 Email: chaitras028@gmail.com</p>
+    <p>🔗 LinkedIn: linkedin.com/in/chaitra</p>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
